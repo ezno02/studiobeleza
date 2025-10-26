@@ -30,9 +30,8 @@ Certifique-se de ter o [Node.js](https://nodejs.org/en/) e o `npm` (Node Package
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
+    git clone [https://github.com/ezno02/studiobeleza.git](https://github.com/ezno02/studiobeleza.git)
     ```
-    *Lembre-se de substituir `SEU_USUARIO/SEU_REPOSITORIO` pelo seu caminho real.*
 
 2.  **Entre no diretório do projeto:**
     ```bash
