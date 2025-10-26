@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const WorkerComponent = ({ nome, descricao, imagem, id }) => {
     return (
-        <div className='worker__card'>
+        <Link to={'/worker/' + id} className='worker__card' >
             <div className="image-div">
                 <img src={imagem} alt={"Imagem do " + nome} />
             </div>
@@ -10,7 +11,7 @@ const WorkerComponent = ({ nome, descricao, imagem, id }) => {
                 <h2>{nome}</h2>
                 <p>{descricao}</p>
             </div>
-        </div>
+        </Link>
     )
 }
 

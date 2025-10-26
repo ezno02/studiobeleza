@@ -4,7 +4,6 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './routes/Home.jsx'
 import Worker from './routes/Worker.jsx'
-import Contato from './routes/Contato.jsx'
 import ErrorPage from './routes/ErrorPage.jsx'
 
 const router = createBrowserRouter([
@@ -20,10 +19,6 @@ const router = createBrowserRouter([
       {
         path: "worker/:id",
         element: <Worker />
-      },
-      {
-        path: "contato",
-        element: <Contato />
       },
     ]
   },

@@ -2,10 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(30, 12, 6);
+}
+
+body:has(#workerFunctionBodyCss) {
   background-color: rgb(6, 18, 30);
 }
 
@@ -15,11 +20,15 @@ header {
   align-items: center;
   padding: 10px 5%;
   min-height: 15vh;
-  background-color: rgba(6, 18, 30, 0.85);
+  background-color: #06121ed9;
   position: sticky;
   top: 0;
   z-index: 100;
   transition: all 350ms 100ms ease-in-out;
+}
+
+.header-red-color {
+  background-color: rgba(30, 12, 6, 0.9);
 }
 
 header h2 {
@@ -65,7 +74,7 @@ header .navBar {
   border-radius: 4px;
   right: 4rem;
   background-color: #D7D1E9;
-  color: #393B43;
+  color: rgb(30, 12, 6);
   padding-top: 10px;
   /* width: 120px; */
   flex-direction: column;
@@ -74,6 +83,7 @@ header .navBar {
   border: solid rgb(88, 88, 90) 1px;
   z-index: 99999;
 }
+
 @media (max-width: 1000px) {
   header .navBar {
     width: 120px;
@@ -117,12 +127,14 @@ header .navBar a:hover {
     display: flex;
     gap: 10px;
   }
+
   header #sectionHud:hover .material-symbols-outlined {
     scale: 2.2;
     transform: translateY(0);
     color: #f2edff;
     transform: rotate(-90deg);
   }
+
   header .navs:has(.navBar__open) #sectionHud .material-symbols-outlined {
     transform: rotate(-90deg);
   }
@@ -133,7 +145,7 @@ header .navBar a:hover {
     background-color: none;
     border: none;
     gap: 10px;
-    background-color: rgb(6, 18, 30);
+    background-color: rgba(0, 0, 0, 0);
     padding: 5px 10px;
     scale: 0;
     transition: all 300ms 20ms ease-in-out;
@@ -155,18 +167,19 @@ header .navBar a:hover {
     transition: all 200ms 50ms ease-in-out;
     font-size: 1.5rem;
   }
+
   header .navBar a:hover {
     font-weight: normal;
     border-bottom: solid 2px #393B43;
   }
 }
 
-#hero {
+.hero {
   background:
     linear-gradient(to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0) 70%,
-      rgba(0, 0, 0, 1) 100%),
+      rgba(6, 18, 30, 1) 100%),
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
     url(./assets/images/imagemHero.jpg);
   /* background-position: center; */
@@ -177,16 +190,43 @@ header .navBar a:hover {
   background-color: #000;
   z-index: 1;
   position: relative;
+  transition: all 1000ms 100ms ease-in-out;
 }
 
-#hero .texts,
-#hero .button-hero {
+.hero-image1 {
+  background:
+    linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(6, 18, 30, 1) 100%),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/imagem4Corte.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: all 1000ms 100ms ease-in-out;
+}
+
+.hero-image2 {
+  background:
+    linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(6, 18, 30, 1) 100%),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/imagem5Corte.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: all 1000ms 100ms ease-in-out;
+}
+
+.hero .texts,
+.hero .button-hero {
   min-height: 42.5vh;
   display: flex;
   align-items: end;
 }
 
-#hero .texts__content {
+.hero .texts__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -194,33 +234,33 @@ header .navBar a:hover {
   width: 50vw;
 }
 
-#hero .texts__content h1 {
+.hero .texts__content h1 {
   width: 250px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 3rem;
   margin-bottom: 10px;
 }
 
-#hero .texts__content h1 span {
+.hero .texts__content h1 span {
   display: block;
   width: 100%;
   text-align: end;
 }
 
-#hero .texts__content h1 .studio__h1 {
+.hero .texts__content h1 .studio__h1 {
   text-align: start;
 }
 
-#hero .texts__content h1 .beleza__h1 {
+.hero .texts__content h1 .beleza__h1 {
   text-align: end;
 }
 
-#hero .button-hero {
+.hero .button-hero {
   justify-content: center;
   align-items: center;
 }
 
-#hero .button-hero a {
+.hero .button-hero a {
   color: white;
   position: relative;
   background-color: #bc1d1d;
@@ -232,7 +272,7 @@ header .navBar a:hover {
   z-index: 1;
 }
 
-#hero .button-hero a:hover {
+.hero .button-hero a:hover {
   scale: 1.05;
 }
 
@@ -241,12 +281,12 @@ header .navBar a:hover {
     font-size: 2rem;
   }
 
-  #hero .texts .texts__content {
+  .hero .texts .texts__content {
     width: 100%;
   }
 
-  #hero .texts .texts__content h1,
-  #hero .texts .texts__content h2 {
+  .hero .texts .texts__content h1,
+  .hero .texts .texts__content h2 {
     scale: .9;
   }
 }
@@ -278,11 +318,11 @@ header .navBar a:hover {
     linear-gradient(to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0) 60%,
-      rgba(6, 18, 30, 1) 100%),
+      rgb(30, 12, 6) 100%),
     linear-gradient(to top,
       rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0) 60%,
-      rgba(0, 0, 0, 1) 100%),
+      rgba(0, 0, 0, 0) 40%,
+      rgba(6, 18, 30, 1) 100%),
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url(./assets/images/imagem2Maquinihas.jpg);
   background-size: cover;
@@ -398,8 +438,10 @@ header .navBar a:hover {
   min-height: 600px;
   border-radius: 10px;
   box-shadow: 0 4px 15px 8px #000;
-  background-color: rgb(10, 30, 51);
+  background-color: rgb(51, 21, 11);
   transition: scale 1s 50ms ease-in-out;
+  color: white;
+  text-decoration: none;
 }
 
 #workers .box .cards__workers .worker__card:hover {
@@ -441,4 +483,60 @@ header .navBar a:hover {
   #workers .box .cards__workers .worker__card {
     width: 90%;
   }
+}
+
+#workerFunctionBodyCss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  min-height: 85vh;
+  padding: 10px;
+}
+
+#workerFunctionBodyCss .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#workerFunctionBodyCss .container .image__worker {
+  width: 50%;
+}
+
+#workerFunctionBodyCss .container .image__worker img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 3px 2px 9px 7px black;
+}
+
+#workerFunctionBodyCss .container .texts {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 65%;
+  padding: 10px;
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+#workerFunctionBodyCss .container .texts h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.voltarHome {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: scale 300ms 20ms ease-in-out, border-bottom 100ms 80ms ease;
+}
+.voltarHome:hover {
+  scale: 1.04;
+  border-bottom: 2px solid white;
 }

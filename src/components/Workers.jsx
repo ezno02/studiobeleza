@@ -7,7 +7,7 @@ const workers = () => {
     return (
         <section id="workers">
             <div className="box">
-                <h2>Nossos funcionarios</h2>
+                <h2>Nossa Equipe</h2>
                 <div className="cards__workers">
                     {workerAssets.map((workerAssets) => (
                         <WorkerComponent
