@@ -2,6 +2,13 @@ import julioImg from './images/workers/imagemJulio.png'
 import mathuesImg from './images/workers/imagemMatheus.png'
 import kellyImg from './images/workers/imagemKelly.png'
 
+import servicoUmImg from './images/services/1-servico.png'
+import servicoDoisImg from './images/services/2-servico.png'
+import servicoTresImg from './images/services/3-servico.png'
+import servicoQuatroImg from './images/services/4-servico.png'
+import servicoCincoImg from './images/services/5-servico.png'
+import servicoSeisImg from './images/services/6-servico.png'
+
 const julio = {
     nome: "Julio",
     sobreNome: "Beles",
@@ -29,4 +36,47 @@ const kelly = {
     id: 2
 }
 
+const servicoUm = {
+    nome: "Pezinho",
+    descricao: "Utilização de uma máquina de corte para remover o volume e criar o formato desejado na parte de trás e laterais do cabelo, provavelmente iniciando ou refinando um degradê (fade). A mão do barbeiro indica a área de trabalho ou auxilia na tensão da pele para um corte mais preciso. O detalhe na nuca é frequentemente chamado de 'pezinho'.",
+    imagem: servicoUmImg,
+    preco: 65,
+}
+
+const servicoDois = {
+    nome: "Aparagem de Barba com Tesoura",
+    descricao: "O barbeiro utiliza a tesoura para remover o excesso de comprimento e dar forma à barba, geralmente como etapa inicial antes do uso da máquina ou navalha para o contorno e o detalhe fino. Essa técnica é crucial para manter a barba com um aspecto cheio, mas bem cuidado.",
+    imagem: servicoDoisImg,
+    preco: 55,
+}
+
+const servicoTres = {
+    nome: "Corte de Cabelo com Tesoura sobre Pente",
+    descricao: "Uso da tesoura em conjunto com um pente como guia para determinar o comprimento e criar a graduação (transição) do cabelo, especialmente na área lateral e topo. É uma técnica fundamental para cortes clássicos e para criar uma transição suave entre o topo e as laterais mais curtas.",
+    imagem: servicoTresImg,
+    preco: 65,
+}
+
+const servicoQuatro = {
+    nome: "Aplicação de Creme/Espuma de Barbear com Pincel",
+    descricao: "O barbeiro aplica espuma ou creme de barbear com um pincel (geralmente de cerdas naturais) na área do pescoço e bochecha. Este passo é essencial para amaciar os pelos, proteger a pele e preparar a área para o barbear com navalha ou máquina, garantindo um deslize mais suave e menos irritação.",
+    imagem: servicoQuatroImg,
+    preco: 55,
+}
+
+const servicoCinco = {
+    nome: "Barba com Navalhete/Lâmina e Pente",
+    descricao: "O barbeiro utiliza uma navalha ou navalhete para raspar a área do lábio superior (bigode) após a preparação da pele. A outra mão pode estar usando uma escova ou pente para esticar a pele, o que é crucial para criar uma superfície firme e plana, permitindo que a lâmina deslize de forma precisa e segura.",
+    imagem: servicoCincoImg,
+    preco: 40,
+}
+
+const servicoSeis = {
+    nome: "Contorno da Barba/Pescoço com Navalha e Esticamento da Pele",
+    descricao: "Uso da navalha para fazer o contorno da barba, removendo os pelos da área do pescoço e garantindo uma linha limpa e definida. A mão do barbeiro está esticando a pele (Tensão da Pele), uma técnica obrigatória para criar uma superfície uniforme para o barbear, minimizando o risco de cortes e garantindo um resultado mais rente.",
+    imagem: servicoSeisImg,
+    preco: 60,
+}
+
 export const workerAssets = [julio, matheus, kelly]
+export const servicesAssets = [servicoUm, servicoDois, servicoTres, servicoQuatro, servicoCinco, servicoSeis]

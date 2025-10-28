@@ -12,8 +12,8 @@ const Header = ({ namePage, scrollAtingido, scrollAtingidoToColor }) => {
 
                 <div className={"navBar" + (menuHeader === true ? " navBar__open" : "")} >
                     <Link to="/" >Home</Link>
-                    <a href="#workers" >Contato</a>
-                    <Link to="/" >Serviços</Link>
+                    <a href="#" >Contato</a>
+                    <a to="#" >Serviços</a>
                 </div>
             </div>
         </header >

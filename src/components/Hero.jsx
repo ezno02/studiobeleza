@@ -14,7 +14,7 @@ const Hero = () => {
         }
     }
     useEffect (() => {
-        const intervalId = setInterval(carrocelRefresh, 5000)
+        const intervalId = setInterval(carrocelRefresh, 3000)
 
         return () => {
             clearInterval(intervalId)
