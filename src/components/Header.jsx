@@ -6,14 +6,14 @@ const Header = ({ namePage, scrollAtingido, scrollAtingidoToColor }) => {
 
     return (
         <header className={(scrollAtingidoToColor === true ? "header-red-color" : "")}>
-            <h2 className={(scrollAtingido === true || namePage != 'home' ? "titleOpen" : "")}>Studio Beleza</h2>
+            <Link className={"title__header " + (scrollAtingido === true || namePage != 'home' ? "titleOpen" : "")} to='/'>Studio Beleza</Link>
             <div className="navs">
                 <div id="sectionHud" onClick={() => setMenuHeader(!menuHeader)}>{namePage}<span class="material-symbols-outlined">arrow_drop_down</span></div>
 
                 <div className={"navBar" + (menuHeader === true ? " navBar__open" : "")} >
                     <Link to="/" >Home</Link>
-                    <a href="#" >Contato</a>
-                    <a to="#" >Serviços</a>
+                    <a href="#services" >Serviços</a>
+                    <a href="#contact" >Contato</a>
                 </div>
             </div>
         </header >

@@ -4,6 +4,8 @@ import Sobre from '../components/Sobre'
 import Workers from '../components/Workers'
 import Services from '../components/Services'
 import Address from '../components/Address'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 import { useOutletContext } from 'react-router-dom'
 
 
@@ -17,6 +19,8 @@ const Home = () => {
             <Workers />
             <Services />
             <Address />
+            <Contact />
+            <Footer />
         </main>
     )
 }

@@ -9,7 +9,6 @@ const Worker = () => {
     const worker = workerAssets[id]
     return (
         <div id='workerFunctionBodyCss'>
-            <Link className="voltarHome" to="/">Voltar</Link>
             <div className="container">
                 <div className="image__worker">
                     <img src={worker.imagem} alt={"Imagem do " + worker.nome} />
