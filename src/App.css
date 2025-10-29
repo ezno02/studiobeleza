@@ -659,3 +659,22 @@ header .navBar a:hover {
   scale: 1.04;
   border-bottom: 2px solid white;
 }
+
+@media (max-width: 1170px) {
+  #services .box .container .cards__services {
+    grid-template-columns: 1fr;
+  }
+
+  #services .box .container .cards__services .service__card:hover {
+    scale: 1.02;
+  }
+}
+
+footer {
+  min-height: 15vh;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

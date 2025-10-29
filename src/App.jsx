@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react'
 import './App.css'
 import Header from './components/Header'
 import { Outlet } from 'react-router-dom'
-import { workerAssets } from './assets/workers'
+import Footer from './components/Footer'
 
 function App() {
   const [scrollAtingido, setScrollAtingido] = useState(false);
@@ -36,6 +36,7 @@ function App() {
     <div className='container'>
       <Header namePage={namePage} scrollAtingido={scrollAtingido} scrollAtingidoToColor={scrollAtingidoToColor} />
       <Outlet context={[setNamePage]} />
+      <Footer />
     </div>
   )
 }
