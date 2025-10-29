@@ -32,7 +32,7 @@ const Hero = () => {
                 </div>
             </div >
             <div className="button-hero">
-                <Link onClick={() => setNumCarrocelClasses(numCarrocelClasses + 1)}>Agendar Visita</Link>
+                <a href='https://w.app/lr6npm' >Agendar Visita</a>
             </div>
         </section >
     )
