@@ -187,7 +187,7 @@ header .navBar a:hover {
       rgba(0, 0, 0, 0) 70%,
       rgba(6, 18, 30, 1) 100%),
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-    url(./assets/images/imagemHero.jpg);
+    url(../assets/images/imagemHero.jpg);
   /* background-position: center; */
   min-height: 85vh;
   background-position: center top;
@@ -206,7 +206,7 @@ header .navBar a:hover {
       rgba(0, 0, 0, 0) 60%,
       rgba(6, 18, 30, 1) 100%),
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-    url(./assets/images/imagem4Corte.jpg);
+    url(../assets/images/imagem4Corte.jpg);
   background-position: center;
   background-size: cover;
   transition: all 1000ms 100ms ease-in-out;
@@ -219,7 +219,7 @@ header .navBar a:hover {
       rgba(0, 0, 0, 0) 60%,
       rgba(6, 18, 30, 1) 100%),
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-    url(./assets/images/imagem5Corte.jpg);
+    url(../assets/images/imagem5Corte.jpg);
   background-position: center;
   background-size: cover;
   transition: all 1000ms 100ms ease-in-out;
@@ -336,7 +336,7 @@ header .navBar a:hover {
       rgba(0, 0, 0, 0) 40%,
       rgba(6, 18, 30, 1) 100%),
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-    url(./assets/images/imagem2Maquinihas.jpg);
+    url(../assets/images/imagem2Maquinihas.jpg);
   background-size: cover;
 }
 
