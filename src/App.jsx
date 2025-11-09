@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react'
-import './App.css'
+import './styles/App.css'
 import Header from './components/Header'
 import { Outlet } from 'react-router-dom'
 
